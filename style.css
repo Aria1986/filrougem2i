@@ -6,6 +6,22 @@
     --color-dark-red4:rgba(165, 42, 42, 0.70);
     --color-dark-red5:rgba(165, 42, 42, 0.50); 
     --color-beige:#F5E0B7;
+    --color-yellow:#FCBA11;
+    --color-purple:#BD8CC9;
+    --color-green:#B4CC6F;
+    --color-blue:#6DD2BA;
+}
+.bg-blue{
+    background-color: var( --color-blue);
+}
+.bg-green{
+    background-color: var( --color-green);
+}
+.bg-yellow{
+    background-color: var( --color-yellow);
+}
+.bg-purple{
+    background-color: var( --color-purple);
 }
 body{
     font-family: "Itim", cursive;

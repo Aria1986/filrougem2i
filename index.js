@@ -2,24 +2,27 @@
 var openProfile = document.getElementById('openProfile')
 var closeProfile = document.getElementById('closeProfile')
 var profil = document.getElementById('profil')
-// openProfile.addEventListener('click', afficherProfil)
-// closeProfile.addEventListener('click', fermerProfil)
-console.log(closeProfile)
-console.log(openProfile)
-console.log(profil)
+var openModules = document.getElementsByClassName('openModules')
+var closeModules = document.getElementsByClassName('closeModules')
+var modules = = document.getElementsByClassName('module')
 
 function afficherProfile(){
-    console.log('ouvrir')
     closeProfile.style.display= 'block';
     openProfile.style.display='none';
     profil.style.display= 'block';
 }
 
 function fermerProfile(){
-    console.log('fermer')
-    console.log(closeProfile)
-    console.log(profil)
     closeProfile.style.display= 'none';
     openProfile.style.display='block';
     profil.style.display= 'none';
+}
+
+function afficherModule(n){
+    let openModule = openModules[n];
+    let closeModule= closeModules[n];
+    let module = modules[n]
+    closeModule.style.display= 'block';
+    openModule.style.display='none';
+    module.style.display= 'block';
 }
