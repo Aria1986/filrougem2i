@@ -8,7 +8,7 @@ console.log(closeProfile)
 console.log(openProfile)
 console.log(profil)
 
-function afficherProfil(){
+function afficherProfile(){
     console.log('ouvrir')
     closeProfile.style.display= 'block';
     openProfile.style.display='none';
