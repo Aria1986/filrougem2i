@@ -24,7 +24,7 @@ body{
     padding:20px;
     flex-direction: column;
     text-align: center;
-    max-width:65%;
+    max-width:350px;
     overflow: hidden;
 }
 form{
@@ -98,6 +98,7 @@ input{
     color: white;
   }
 .navbar{
+    margin-top: 40px;
     position:fixed;
     bottom:0px;
     left: 40%;
@@ -109,11 +110,17 @@ input{
 }
 
 @media screen and (max-width:600px){
-    .profil{
+    #profil{
         display:none;
     }
-    .container{
-        width:100%;
+  #openProfile{
+    display:block;
+  }
+  #closeProfile{
+    display:none;
+  }
+    .textSvg-center{
+    width:250px;
     }
 }
 @media screen and (max-width:768px){
