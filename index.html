@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- dowload font antiqua -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- download itim front -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Itim&display=swap" rel="stylesheet">
+
+    <!-- download style files -->
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Formatech</title>
+    <div id="logo">Formatech</div>
+    <div class="container">
+        <h1>Connexion</h1>
+        <form action="accueilEtudiant.html" method="POST">
+            <div class="input">
+                <label for="email">Identifiant</label><br>
+                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required placeholder="Prénom.Nom@formatech.com" id="email">
+            </div>
+            <div class="input">
+                <label for="password">Mot de passe </label><br>
+                <input type="password" id="password" placeholder="Password5#" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,16}$">
+                <p><i>(doit contenir au moins 1 majuscule,1 minuscule,et 1 chiffre de taille entre 8 et 16 caractères)</i></p> 
+            </div>
+            <button class="pill-red" type="submit">Se connecter</button>
+            <p>Vous avez perdu votre mot de passe?</p>
+            <p>Cliquez sur<a href="#" > Renouveler votre mot de passe</a></p>
+        </form>
+    </div>
+</head>
+<body>
+    
+</body>
+</html>

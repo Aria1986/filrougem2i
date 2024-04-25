@@ -1,0 +1,80 @@
+
+:root {
+    --color-dark-red:#A52A2A;
+    --color-dark-red2:rgba(165, 42, 42, 0.90);
+    --color-dark-red3:rgba(165, 42, 42, 0.80);
+    --color-dark-red4:rgba(165, 42, 42, 0.70);
+    --color-dark-red5:rgba(165, 42, 42, 0.50); 
+    --color-beige:#F5E0B7;
+}
+body{
+    font-family: "Itim", cursive;
+}
+#logo{
+    font-family: "Inknut Antiqua", serif;
+    color:var(--color-dark-red);
+    letter-spacing: 10px;
+    font-size:xx-large;
+    padding:20px;
+}
+.container{
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width:75%;
+}
+form{
+    text-align: left;
+    width:320px;
+    margin:0 auto;
+}
+.input{
+    margin: 20px 4px 20px;
+}
+
+.pill-red{
+    padding: 10px;
+    border-radius: 30px;
+    background-color:var(--color-dark-red);
+    color:white;
+    font-weight: 400;
+    font-size: 16px;
+    margin:0 5.5rem;
+}
+
+input{
+    background-color: var(--color-beige);
+    width:290px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.textSvg-center{
+   display:flex;
+    width:320px;
+   margin:0 auto;
+   text-align: center;
+}
+
+#profilDesktop{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width:350px;
+    padding:15px;
+    float:left
+}
+.options{
+    color:white;
+    border-radius: 5px;
+    padding:10px;
+    margin-bottom: 10px;
+}
+.options p {
+    margin:0 auto;
+}
+.red1{
+    background-color: var(--color-dark-red);
+}
+.red2{
+    background-color: var(--color-dark-red2);
+}
