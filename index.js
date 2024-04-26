@@ -19,10 +19,20 @@ function fermerProfile(){
 }
 
 function afficherModule(n){
+    console.log('afficher module')
     let openModule = openModules[n];
     let closeModule= closeModules[n];
     let module = modules[n]
     closeModule.style.display= 'block';
     openModule.style.display='none';
     module.style.display= 'block';
+}
+function fermerModule(n){
+    console.log('fermer module')
+    let openModule = openModules[n];
+    let closeModule= closeModules[n];
+    let module = modules[n]
+    closeModule.style.display= 'none';
+    openModule.style.display='block';
+    module.style.display= 'none';
 }
