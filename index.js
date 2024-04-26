@@ -4,7 +4,7 @@ var closeProfile = document.getElementById('closeProfile')
 var profil = document.getElementById('profil')
 var openModules = document.getElementsByClassName('openModules')
 var closeModules = document.getElementsByClassName('closeModules')
-var modules = = document.getElementsByClassName('module')
+var modules =  document.getElementsByClassName('module')
 
 function afficherProfile(){
     closeProfile.style.display= 'block';
@@ -29,10 +29,17 @@ function afficherModule(n){
 }
 function fermerModule(n){
     console.log('fermer module')
+    console.log(openModules)
+    console.log(openModules[n])
+    console.log(closeModules[n])
+    console.log(modules[n])
     let openModule = openModules[n];
     let closeModule= closeModules[n];
     let module = modules[n]
     closeModule.style.display= 'none';
     openModule.style.display='block';
     module.style.display= 'none';
+    console.log(openModules[n])
+    console.log(closeModules[n])
+    console.log(modules[n])
 }
