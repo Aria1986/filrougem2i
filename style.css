@@ -42,6 +42,7 @@ body{
     text-align: center;
     max-width:750px;
     overflow: hidden;
+    border-radius: 5px;
 }
 form{
     text-align: left;
@@ -84,9 +85,10 @@ input{
     width:350px;
     padding:15px;
     float:left;
-    margin-left:10px;
+    margin-left:20px;
     margin-right: 20px;
     margin-bottom: 20px;
+    border-radius: 5px;
 }
 .options{
     border-radius: 5px;
@@ -130,6 +132,7 @@ input{
     display: flex;
     width:300px;
     margin:0 auto;
+    border-radius: 5px;
 }
 .notes{
     text-align: left;
@@ -162,6 +165,7 @@ input{
     .navbar{
         left:0%;
         width:100%;
+        border-radius: 5px;
     }
 }
 /* @media screen and (min-width:768px){
