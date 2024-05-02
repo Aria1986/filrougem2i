@@ -11,6 +11,13 @@
     --color-green:#B4CC6F;
     --color-blue:#6DD2BA;
 }
+a{
+    text-decoration: none;
+    color:black;
+}
+button:hover, .options:hover{
+    cursor: pointer;
+}
 .bg-blue{
     background-color: var( --color-blue);
 }
@@ -25,6 +32,7 @@
 }
 body{
     font-family: "Itim", cursive;
+    margin-bottom: 120px;
 }
 #logo{
     font-family: "Inknut Antiqua", serif;
@@ -94,12 +102,10 @@ input{
     border-radius: 5px;
     padding:10px;
     margin-top:10px;
-
-}
-.options a {
-    text-decoration: none;
-    margin:0 auto;
     color:white;
+}
+.options p {
+    margin:2px auto;
 }
 .red1{
     background-color: var(--color-dark-red);
