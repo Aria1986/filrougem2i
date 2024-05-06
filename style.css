@@ -14,6 +14,7 @@
 a{
     text-decoration: none;
     color:black;
+    padding:10px;
 }
 button:hover, .options:hover{
     cursor: pointer;
@@ -34,6 +35,46 @@ body{
     font-family: "Itim", cursive;
     margin-bottom: 120px;
 }
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+#redCircle{
+    background-color: var(--color-dark-red);
+    width:520px;
+    height:520px;
+    border-radius:50%;
+    position:absolute;
+    right:5px;
+    opacity:60%;
+    filter: blur(30px);
+    z-index:1;
+}
+
+#bigYellowCircle{
+    background-color: var(--color-beige);
+    border-radius:50%;
+    width:320px;
+    height:320px;
+    position:absolute; 
+    opacity:60%;
+    bottom:5px;
+    filter: blur(30px);
+    z-index:2;
+}
+
+#smallYellowCircle{
+    background-color: var(--color-yellow);
+    border-radius:50%;
+    opacity:60%;
+    position:absolute; 
+    width:100px;
+    height:100px;
+    left: 257px;
+    top: 221px;
+    filter: blur(30px);
+    z-index:3;
+}
 #logo{
     font-family: "Inknut Antiqua", serif;
     color:var(--color-dark-red);
@@ -51,6 +92,8 @@ body{
     max-width:750px;
     overflow: hidden;
     border-radius: 5px;
+    z-index: 0;
+    position: static 
 }
 form{
     text-align: left;
@@ -93,13 +136,13 @@ input{
     width:350px;
     padding:15px;
     float:left;
-    margin-left:20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin:20px;
+
     border-radius: 5px;
 }
 .options{
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     padding:10px;
     margin-top:10px;
     color:white;
@@ -136,9 +179,10 @@ input{
 }
 .module{
     display: flex;
-    width:300px;
+    width:320px;
     margin:0 auto;
-    border-radius: 5px;
+    border-bottom-left-radius:  5px;
+    border-bottom-right-radius: 5px;
 }
 .notes{
     text-align: left;
@@ -179,3 +223,7 @@ input{
         width:90%;
     }
 } */
+
+
+
+
