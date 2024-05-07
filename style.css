@@ -39,6 +39,9 @@ body{
     display: flex;
     align-items: center;
 }
+.s-around{
+    justify-content:space-around;
+}
 #redCircle{
     background-color: var(--color-dark-red);
     width:520px;
@@ -82,12 +85,14 @@ body{
     font-size:xx-large;
     padding:20px;
 }
+/* .column{
+    display: flex;
+    flex-direction: column;
+} */
 .container{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    margin:10px auto ;
-    display: flex;
-    padding:20px;
-    flex-direction: column;
+    margin:10px auto ;  
+    padding:20px;  
     text-align: center;
     max-width:750px;
     overflow: hidden;
@@ -188,6 +193,18 @@ input{
     text-align: left;
     padding:20px;
 }
+.img{
+    border-radius: 5px;
+    margin:0-auto;
+}
+#active{
+    width: 60px;
+    height:60px;
+    background-color: var( --color-dark-red);
+    display:inline-block;
+    padding-left: 7px;
+    padding-top: 7px;
+}
 @media screen and (max-width:600px){
     #profil{
         display:none;
@@ -223,6 +240,10 @@ input{
         width:90%;
     }
 } */
+
+
+
+/* ✨ home */
 
 
 
