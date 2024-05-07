@@ -100,7 +100,7 @@ body{
     max-width:750px;
     overflow: hidden;
     border-radius: 5px;
-    z-index: 100;
+    z-index: 10;
     position: relative; 
     background-color: white;
 }
@@ -160,6 +160,12 @@ input{
 }
 .options p {
     margin:2px auto;
+}
+#crayon{
+    position:absolute;
+    z-index: 11;
+    right: 20px;
+    top: 196px;
 }
 .red1{
     background-color: var(--color-dark-red);
@@ -239,6 +245,9 @@ input{
         left:0%;
         width:100%;
         border-radius: 5px;
+    }
+    #crayon, #redCircle, #bigYellowCircle, #smallYellowCircle{
+        display:none;
     }
 }
 /* @media screen and (min-width:768px){
