@@ -16,8 +16,14 @@ a{
     color:black;
     padding:10px;
 }
+h4{
+    color:black;
+}
 button:hover, .options:hover{
     cursor: pointer;
+}
+.bg-beige{
+    background-color: var(--color-beige);
 }
 .bg-blue{
     background-color: var( --color-blue);
@@ -85,10 +91,7 @@ body{
     font-size:xx-large;
     padding:20px;
 }
-/* .column{
-    display: flex;
-    flex-direction: column;
-} */
+
 .container{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     margin:10px auto ;  
@@ -97,8 +100,9 @@ body{
     max-width:750px;
     overflow: hidden;
     border-radius: 5px;
-    z-index: 0;
-    position: static 
+    z-index: 100;
+    position: relative; 
+    background-color: white;
 }
 form{
     text-align: left;
@@ -142,7 +146,9 @@ input{
     padding:15px;
     float:left;
     margin:20px;
-
+    z-index:101;
+    position: relative;
+    background-color: white;
     border-radius: 5px;
 }
 .options{
