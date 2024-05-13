@@ -16,9 +16,13 @@ a{
     color:black;
     padding:10px;
 }
+p{
+    padding:5px;
+}
 h4{
     color:black;
 }
+
 button:hover, .options:hover{
     cursor: pointer;
 }
@@ -39,7 +43,7 @@ button:hover, .options:hover{
 }
 body{
     font-family: "Itim", cursive;
-    margin-bottom: 120px;
+    margin-bottom: 130px;
 }
 .d-flex{
     display: flex;
@@ -109,9 +113,7 @@ form{
     width:320px;
     margin:0 auto;
 }
-.input{
-    margin: 20px 4px 20px;
-}
+
 
 .pill-red{
     padding: 10px;
@@ -128,6 +130,7 @@ input{
     width:290px;
     padding: 10px;
     border-radius: 5px;
+    margin: 0 4px 20px;
 }
 
 .textSvg-center{

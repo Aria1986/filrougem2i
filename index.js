@@ -43,3 +43,41 @@ function fermerModule(n){
     console.log(closeModules[n])
     console.log(modules[n])
 }
+
+let formProfil = document.getElementById('modifProfil');
+formProfil.addEventListener('submit',validationModifs(e));
+
+
+function validerForm(e){
+    e.preventDefault(); 
+            let email = document.getElementById('email').value;
+            let firstname =  document.getElementById('firstname').value;
+            let lastname =  document.getElementById('lasttname').value;
+            let tel = document.getElementById('phone').value;
+            if (firstname.length<3) {
+                $('#errorName').text("Veuillez entrer un prénom valide.");
+            }
+            if (lastname.length<3) {
+                $('#errorName').text("Veuillez entrer un nom valide.");
+            }
+            else if (!email.match(
+                /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+              )){
+                $('#errorEmail').text("Veuillez entrer une adresse email valide.");
+            }
+            else if(tel.length>10 || (tel.length==0 )){
+                $('#errorMessage').text("Veuillez entrer un texte  valide (300 caractères max).");
+            }
+            else {
+                // Extraction et affichage des données
+                $('#formData').html(`<ul>
+                    <li>Nom : ${name}</li>
+                    <li>Email : ${email}</li>
+                    <li>Message : ${message}</li>
+                </ul>`);
+            }
+}
+function validationModifs(e){
+    validerForm();
+    alert('vos informations ont bien été enregistrées')
+}
