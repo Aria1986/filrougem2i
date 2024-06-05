@@ -1,13 +1,18 @@
 
-var openProfile = document.getElementById('openProfile')
-var closeProfile = document.getElementById('closeProfile')
-var profil = document.getElementById('profil')
-var openModules = document.getElementsByClassName('openModules')
-var closeModules = document.getElementsByClassName('closeModules')
-var modules =  document.getElementsByClassName('module')
+
+
+let openProfile = document.getElementById('openProfile')
+let closeProfile = document.getElementById('closeProfile')
+let profil = document.getElementById('profil')
+let openModules = document.getElementsByClassName('openModules')
+let closeModules = document.getElementsByClassName('closeModules')
+let modules =  document.getElementsByClassName('module')
 
 window.addEventListener('load',function(){
-    document.getElementById('lottie').style.display= "none"
+    this.setTimeout(()=>{
+    document.getElementById('loader').style.display= "none"
+    document.getElementById('page-content').style.display= "block"
+    },8000)
 })
 
 function afficherProfile(){

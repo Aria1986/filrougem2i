@@ -24,7 +24,7 @@ h4{
 }
 
 #loader{
-    /* margin-left:40%; */
+    /* width:100%; */
     position: fixed;
     top:0;
     left:40%;
