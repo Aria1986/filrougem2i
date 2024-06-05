@@ -24,7 +24,6 @@ h4{
 }
 
 #loader{
-    /* width:100%; */
     position: fixed;
     top:0;
     left:40%;
@@ -94,9 +93,9 @@ body{
     left: 257px;
     top: 221px;
     filter: blur(30px);
-    z-index:3;
+    z-index:0;
 }
-#logo{
+#logo {
     font-family: "Inknut Antiqua", serif;
     color:var(--color-dark-red);
     letter-spacing: 10px;
