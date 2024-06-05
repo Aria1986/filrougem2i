@@ -23,6 +23,14 @@ h4{
     color:black;
 }
 
+#loader{
+    /* margin-left:40%; */
+    position: fixed;
+    top:0;
+    left:40%;
+    z-index:100;
+}
+
 button:hover, .options:hover{
     cursor: pointer;
 }
@@ -116,13 +124,13 @@ form{
 
 
 .pill-red{
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 30px;
     background-color:var(--color-dark-red);
     color:white;
     font-weight: 400;
     font-size: 16px;
-    margin:0 5.5rem;
+    margin:1rem 5.5rem;
 }
 
 input{
@@ -210,7 +218,7 @@ input{
 }
 .img{
     border-radius: 5px;
-    margin:0-auto;
+    margin:5px auto;
 }
 #active{
     width: 60px;
@@ -230,11 +238,14 @@ input{
   #closeProfile{
     display:none;
   }
-    .textSvg-center{
+ .textSvg-center{
     width:250px;
     }
+    .container{
+        flex-direction: column;
+    }
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:992px){
     .container{
         width:90%;
     }

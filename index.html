@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/lottie-js@latest/dist/lottie.min.js"></script>
      <!-- dowload font antiqua -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,13 +15,25 @@
 
     <!-- download style files -->
     <link rel="stylesheet" href="style.css">
-
+    <script src="index.js"></script>
+</head>
+<body>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js">
+        
+    </script>
+    <div id="loader">
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+        <dotlottie-player id="lottie" src="https://lottie.host/e2d9273f-f270-4a92-924d-15ef7e683d72/nhbcchxLQ3.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player> 
+    <!-- <lottie-player  src='https://lottie.host/e2d9273f-f270-4a92-924d-15ef7e683d72/nhbcchxLQ3.json' background="transparent"  speed="0.5s"  style="width: 360px; height:640px; ;" loop control autoplay></lottie-player> -->
+    </div>
+    <div id="page-content">
+    
     <title>Formatech</title>
     <div id="redCircle"></div>
     <div id="bigYellowCircle"></div>
     <div id="smallYellowCircle"></div>
     <div id="logo">Formatech</div>
-    
+
     <div class="container">
         <h1>Connexion</h1>
         <form action="accueil_etudiant.html" action="get">
@@ -38,8 +51,7 @@
             <p>Cliquez sur<a href="#" > Renouveler votre mot de passe</a></p>
         </form>
     </div>
-</head>
-<body>
-    
+
+</div>
 </body>
 </html>

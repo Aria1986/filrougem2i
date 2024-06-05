@@ -6,6 +6,10 @@ var openModules = document.getElementsByClassName('openModules')
 var closeModules = document.getElementsByClassName('closeModules')
 var modules =  document.getElementsByClassName('module')
 
+window.addEventListener('load',function(){
+    document.getElementById('lottie').style.display= "none"
+})
+
 function afficherProfile(){
     closeProfile.style.display= 'block';
     openProfile.style.display='none';
