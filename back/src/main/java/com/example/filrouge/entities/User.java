@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
+import org.hibernate.cache.spi.support.AbstractReadWriteAccess;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -11,6 +12,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name="users")
@@ -37,6 +39,16 @@ public class User implements UserDetails {
 
     @ManyToOne
     private Role role;
+
+    @OneToOne
+    private UserDatas userDatas;
+
+    @OneToMany(mappedBy = "Users")
+    private Set<Feedback> feedbacks;
+
+    @ManyToOne
+    private Module module;
+
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities(){
