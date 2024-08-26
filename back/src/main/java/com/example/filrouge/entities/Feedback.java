@@ -13,4 +13,16 @@ public class Feedback {
     @Column(nullable = false)
     private Integer id;
 
+    @Column(nullable = false)
+    private int note;
+
+    @Column(nullable = false, length=500)
+    private String text;
+
+    @ManyToOne
+    private User user;
+
+    @ManyToOne
+    private Module module;
+
 }

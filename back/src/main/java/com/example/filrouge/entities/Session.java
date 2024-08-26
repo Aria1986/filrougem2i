@@ -28,4 +28,14 @@ public class Session {
     @OneToMany(mappedBy = "sessions")
     private Set<Module> modules;
 
+    @Override
+    public String toString() {
+        return "Session{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ",starting the :'"+starting_date+'\''+
+        ",finishing the :'"+ending_date+'\''+
+                '}';
+    }
+
 }

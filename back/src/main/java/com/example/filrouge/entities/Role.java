@@ -3,6 +3,8 @@ package com.example.filrouge.entities;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.Set;
+
 @Data
 @Table(name="roles")
 @Entity
@@ -18,4 +20,7 @@ public class Role {
 
     @Column
     private String description;
+
+    @OneToMany(mappedBy = "roles")
+    private Set<User> users;
 }

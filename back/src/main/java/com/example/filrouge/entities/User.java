@@ -40,7 +40,7 @@ public class User implements UserDetails {
     @ManyToOne
     private Role role;
 
-    @OneToOne
+    @OneToOne(cascade = CascadeType.REMOVE)
     private UserDatas userDatas;
 
     @OneToMany(mappedBy = "Users")
