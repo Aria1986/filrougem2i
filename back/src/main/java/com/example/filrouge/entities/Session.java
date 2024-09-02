@@ -5,6 +5,7 @@ import lombok.Data;
 
 import java.sql.Timestamp;
 import java.util.Date;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -26,7 +27,7 @@ public class Session {
     private Date ending_date;
 
     @OneToMany(mappedBy = "sessions")
-    private Set<Module> modules;
+    private List<Module> modules;
 
     @Override
     public String toString() {

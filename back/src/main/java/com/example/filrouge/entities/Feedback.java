@@ -20,6 +20,7 @@ public class Feedback {
     private String text;
 
     @ManyToOne
+    @JoinColumn(name="user_id",referencedColumnName = "id", nullable=false)
     private User user;
 
     @ManyToOne

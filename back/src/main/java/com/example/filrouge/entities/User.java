@@ -38,13 +38,14 @@ public class User implements UserDetails {
     private Date updatedAt;
 
     @ManyToOne
+    @JoinColumn(name="role_id",referencedColumnName = "id", nullable=false)
     private Role role;
 
     @OneToOne(cascade = CascadeType.REMOVE)
     private UserDatas userDatas;
 
-    @OneToMany(mappedBy = "Users")
-    private Set<Feedback> feedbacks;
+    @OneToMany(mappedBy = "user")
+    private List<Feedback> feedbacks;
 
     @ManyToOne
     private Module module;
@@ -81,16 +82,16 @@ public class User implements UserDetails {
         return true;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id:" + id +
-                ",email:'" + email+'\''+
-                ", createdAt:" + createdAt +
-                ",updateAt:"+ updatedAt+
-                "}";
-
-    }
+//    @Override
+//    public String toString() {
+//        return "User{" +
+//                "id:" + id +
+//                ",email:'" + email+'\''+
+//                ", createdAt:" + createdAt +
+//                ",updateAt:"+ updatedAt+
+//                "}";
+//
+//    }
 
 
 }

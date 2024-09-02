@@ -3,6 +3,7 @@ package com.example.filrouge.entities;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.List;
 import java.util.Set;
 
 @Data
@@ -21,6 +22,6 @@ public class Role {
     @Column
     private String description;
 
-    @OneToMany(mappedBy = "roles")
-    private Set<User> users;
+    @OneToMany(mappedBy = "role")
+    private List<User> users;
 }

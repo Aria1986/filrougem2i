@@ -20,12 +20,13 @@ public class Module {
     @Column(nullable = false, length=100)
     private String room;
 
+
     @ManyToOne
     @JoinColumn(name="session_id",referencedColumnName = "id", nullable=false)
     private Session session;
 
     @ManyToOne
-    @JoinColumn(name="building_id",referencedColumnName = "id", nullable=false)
+
     private Building building;
 
     @ManyToOne
